@@ -6,7 +6,27 @@ b = 2
 
 age, name = 50, 'Vincent'
 
+# 輸出 print()
 print(a+b)
+# sep 間隔符號: 預設值' '
+print(a, b, sep='&')
+# end 結束符號: 預設值'\n'
+print(a, b, sep='&', end='.')
+
+# print() 參數格式化 : % (舊語法)
+print('%s考了%d分' % ('王小明', 80)) # %s: 文字 %d: 符號(數字)
+print('%5s考了%3d分' % ('王小明', 80)) # 加 - 靠左
+print('圓周率是%.2f' % (3.14159)) # %f: 符點數
+
+# print() 參數格式化 : format()
+print('{}考了{}分'.format('王小明', 80)) 
+print('{0}考了{1}分'.format('王小明', 80)) # 利用索引值 帶入
+print('{:>5}考了{:<3}分'.format('王小明', 80)) # 文字靠左 數字靠右 ^置中 
+
+# print() 參數格式化 : f-strings
+name1 = '王小明'
+score = 80
+print(f'{name1:^5}考了{score:3}分!')
 
 '''
 變量類型
@@ -23,6 +43,8 @@ print(a+b)
 5. Tuple (元組) -> ()
 6. dict (字典) -> {key: value}
 7. Set (集合) -> {}
+
+8. datetime 型態 需匯入模組
 '''
 name = '王小明'
 age = 18
@@ -60,6 +82,9 @@ print(str4[0])
 print(str4[2:5])
 print(str4[:5])
 print(str4[2:-1])
+
+# 小技巧: Ctrl + shift + L or Ctrl + D
+# 小技巧: Alt + 上/下
 
 # 字串 查找、修改
 '''
@@ -103,4 +128,18 @@ print(str7.join(li))
 2. title() -> 首字母大寫
 3. startwith(str) -> 檢查字串是否str開頭 -> true/false 
 '''
+
+# 輸入: input() -> 很少用
+scr = input('請輸入一個值:')
+print(f'您的成績為{scr}')
+
+# 字串相加問題
+scr1 = input('國文成績')
+scr2 = input('英文成績')
+print(f'您的成績為{scr1 + scr2}')
+
+# 型態轉換
+scr1 = int(input('國文成績'))
+scr2 = int(input('英文成績'))
+print(f'您的成績為{scr1 + scr2}')
 

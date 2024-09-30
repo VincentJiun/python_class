@@ -46,6 +46,7 @@ index
 count
 in -> true/false
 not in
+len()
 '''
 # in
 print('V' in li1)
