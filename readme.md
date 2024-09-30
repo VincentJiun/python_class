@@ -37,7 +37,7 @@ deactivate
 
 ### git 版本控制
 - 開始版本控制
-```
+```cmd
 git init
 ```
 - 建立不須版控檔案: .gitignore
@@ -63,6 +63,14 @@ git init
 
 ## 字典 dictionary
 ### class05.py
+
+## 集合
+### class06.py
+
+## 判斷語句 、 比較運算符、 邏輯運算符
+### class07.py
+
+
 
 
 

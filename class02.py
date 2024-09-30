@@ -4,6 +4,8 @@
 a = 1
 b = 2
 
+age, name = 50, 'Vincent'
+
 print(a+b)
 
 '''
