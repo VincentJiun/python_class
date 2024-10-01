@@ -78,6 +78,7 @@ git init
 $BMI = 體重(kg) / 身高(m) ^2$
 3. 成績判斷
 4. 奇偶判斷
+5. 補充: lambda function
 
 ## 迴圈 for / while
 ### class09.py
@@ -105,6 +106,19 @@ $BMI = 體重(kg) / 身高(m) ^2$
 ```
 pip install (模組名稱)
 ```
+
+## 例外處理
+### class12.py
+
+1. try...except 語法
+
+## 檔案處理 Open()
+### class13.py
+
+## if __name__ == '__main__:
+### class14.py & test.py
+
+
 
 
 

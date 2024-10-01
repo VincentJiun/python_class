@@ -60,3 +60,25 @@ def getBMI(weight, height):
     return msg
 
 print(getBMI(80, 180))
+
+# Lambda (匿名函數)
+'''
+def add(x,y):
+    return x + y
+
+lambda 參數1,參數2,...: 表達式
+add = lambda x,y: x + y
+'''
+add = lambda x,y: x + y
+print(add(1,2))
+
+# Lambda 應用場景(一)
+my_list = ['abd', 'a', 'abcd', 'ab']
+# help(my_list.sort)
+my_list.sort(key=lambda x: len(x))
+print(my_list)
+
+# Lambda 應用場景(二)
+my_list1 = [1,2,3,5,7,8,12,78,84,22,123]
+# help(filter)
+print(list(filter(lambda x: (x%2==1), my_list1)))
