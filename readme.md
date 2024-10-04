@@ -118,6 +118,12 @@ pip install (模組名稱)
 ## if __name__ == '__main__:
 ### class14.py & test.py
 
+## Excel自動化操作 (openpyxl)
+### class15.py
+
+## Openpyxl 實作練習
+### class16.py
+- 參考文件: https://openpyxl.readthedocs.io/en/stable/index.html
 
 
 
