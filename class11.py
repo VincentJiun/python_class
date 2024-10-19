@@ -1,4 +1,4 @@
-# 類別
+# 類(Class): 封裝變數或函式
 '''
 舉例: 汽車製造藍圖
 
@@ -7,14 +7,17 @@ class 類別名稱():
 
     def 方法名稱():
         方法內容
+
+呼叫基本語法: 類別名稱.屬性名稱
 '''
 
-class Car(): # ()可省略 or (Object) 都可以
+class Car(): # ()可省略 or (Object) 都可以 -> (要繼承的類)
     # name = 'Ford'
-    def __init__(self, name='BMW'): # 初始化類別(建構式)
-        self.name = name
+    def __init__(self, name='BMW'): # 初始化類別(建構式、建構子) -> (self, 物件初始化參數)
+        self.name = name # 屬性
 
-    def hello(self):
+    # 方法
+    def hello(self): # (self, 自訂義所需參數)
         print('Hello')
 
 c1 = Car('Ford') # 實體化(建立物件)
@@ -36,7 +39,7 @@ class Rectangle():
 r = Rectangle(10, 20)
 print(f'面積為{r.Area()}')
 
-# 封裝 (私用)
+# 封裝 (私有) -> 類裡面的屬性或方法只想在類裡面呼叫，但不想在物件被呼叫
 class Bank():
     def __init__(self, money):
         self.__money = money # 封裝屬性
@@ -98,6 +101,7 @@ class Sports(Car):
 
 s = Sports('Porsche')
 s.talk()
+s.hello()
 
 # 多重繼承
 '''
